@@ -101,7 +101,7 @@ var components
 try {
   components = {
     newsbox: function () {
-      return __webpack_require__.e(/*! import() | components/newsbox/newsbox */ "components/newsbox/newsbox").then(__webpack_require__.bind(null, /*! @/components/newsbox/newsbox.vue */ 47))
+      return __webpack_require__.e(/*! import() | components/newsbox/newsbox */ "components/newsbox/newsbox").then(__webpack_require__.bind(null, /*! @/components/newsbox/newsbox.vue */ 49))
     },
   }
 } catch (e) {
@@ -183,14 +183,22 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
 var _default = {
   data: function data() {
     return {
-      title: "Hello"
+      title: "Hello",
+      navIndex: 0
     };
   },
   onLoad: function onLoad() {},
-  methods: {}
+  methods: {
+    clickNav: function clickNav(index) {
+      this.navIndex = index;
+    }
+  }
 };
 exports.default = _default;
 
